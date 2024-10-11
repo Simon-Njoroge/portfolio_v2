@@ -96,14 +96,13 @@ const Skills=()=>{
                 Technologies && Technologies.map((tech:any)=>{
                   return(
                     <>
-                    <div key={tech.id} className="bg-gray-800 cursor-pointer rounded-md hover:border-orange-600 hover:border-2">
+                    <div key={tech.id} className="bg-gray-800 cursor-pointer rounded-md  hover:border-orange-600 hover:border-2">
                       <img src={tech.logo} alt="" className="w-full h-48 rounded"/>
                       <div className="ml-2">
                       <p className="text-white font-bold text-xl">{tech.name}</p>
                       <p className="text-orange-600">{tech.expertiseLevel}</p>
                       <p className="text-white">{tech.description}</p>
                       </div>
-                      
                     </div>
                     </>
                   )

@@ -63,6 +63,11 @@ const Aboutme = () => {
                         new environments and cultures.</p>
                 </div>
                 <div>
+                    <div>
+                        <h1 className="text-orange-600 font-bold text-2xl mt-5">Education.</h1>
+                    </div>
+                </div>
+                <div>
                     <h1 className="text-orange-600 font-bold text-2xl mt-5">Experience.</h1>
                     <div className="text-white grid grid-cols-2 gap-2 mt-5">
                         {

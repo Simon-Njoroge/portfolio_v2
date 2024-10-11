@@ -1,4 +1,4 @@
-import me from '../assets/me.jpg'
+import me from '../assets/me 1.jpg'
 import { TypeAnimation } from 'react-type-animation';
 import { Gauge } from '@mui/x-charts/Gauge';
 import Stack from '@mui/material/Stack';
@@ -74,6 +74,11 @@ const Home=()=>{
             <img src={me} alt="" className='rounded cursor-pointer relative hover:-top-2' />
             </div>
         </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
         </>
     )
 }

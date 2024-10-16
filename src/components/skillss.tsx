@@ -91,13 +91,13 @@ const Skills=()=>{
         <>
         <div>
             <h1 className="text-orange-600 font-bold text-2xl" >Technologies.</h1>
-            <div className="grid grid-cols-3 gap-5 mt-5">
+            <div className="block md:grid md:grid-cols-3 gap-5 mt-5">
               {
                 Technologies && Technologies.map((tech:any)=>{
                   return(
                     <>
-                    <div key={tech.id} className="bg-gray-800 cursor-pointer rounded-md  hover:border-orange-600 hover:border-2">
-                      <img src={tech.logo} alt="" className="w-full h-48 rounded"/>
+                    <div key={tech.id} className="bg-gray-800 cursor-pointer rounded-md border-b-2 mb-2  hover:bg-gray-700 transition duration-300 hover:border-2">
+                      <img src={tech.logo} alt="" className="w-full h-48 rounded hover:hue-rotate-180"/>
                       <div className="ml-2">
                       <p className="text-white font-bold text-xl">{tech.name}</p>
                       <p className="text-orange-600">{tech.expertiseLevel}</p>

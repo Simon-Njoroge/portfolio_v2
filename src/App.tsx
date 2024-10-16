@@ -8,6 +8,7 @@ import Projectcontainer from './container/projectcontainer';
 import Certificatecontainer from './container/Certificatescontainer';
 import Blogscontainer from './container/blogs_container';
 import Contactcontainer from './container/contact_container';
+import Communitycontainer from './container/community_container';
 function App() {
  const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ function App() {
   {
     path:'Blogs',
     element:<Container><Blogscontainer/></Container>
+  },
+  {
+    path:'community',
+    element:<Container><Communitycontainer/></Container>
   },
   {
     path:'Contact',

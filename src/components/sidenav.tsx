@@ -27,13 +27,16 @@ const Sidenavbar = () => {
             <Link to="/Blogs"><li className="p-3 border-b-2 border-gray-700 hover:bg-gray-800 transition duration-300 cursor-pointer">
               Blogs
             </li></Link>
+            <Link to="/community"><li className="p-3 border-b-2 border-gray-700 hover:bg-gray-800 transition duration-300 cursor-pointer">
+              community
+            </li></Link>
             <Link to="/Contact"> <li className="p-3 border-b-2 border-gray-700 hover:bg-gray-800 transition duration-300 cursor-pointer">
               Contacts
             </li></Link>
-            <li className="p-3 border-b-2 border-gray-700 flex gap-4 items-center justify-center hover:bg-gray-800 transition duration-300">
-              <Linkedin className='cursor-pointer' />
-              <Github className='cursor-pointer'  />
-              <Youtube  className='cursor-pointer' />
+            <li className="p-3 border-b-2 border-gray-700 flex gap-1 items-center justify-center hover:bg-gray-800 transition duration-300">
+              <a href="https://www.linkedin.com/in/dev-simon/"><Linkedin className='cursor-pointer' /></a>
+              <a href="https://github.com/Simon-Njoroge"><Github className='cursor-pointer'  /></a>
+              <a href="https://www.youtube.com/channel/UCSSax_PnNcCGrUWfn5lRGbQ"><Youtube  className='cursor-pointer' /></a>
             </li>
           </ul>
         </div>

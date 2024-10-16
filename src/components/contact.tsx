@@ -1,13 +1,15 @@
 import { Mail, Phone, MapPin } from 'lucide-react';
-import React, { useRef } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; 
 const Contact = () => {
   const form: any = useRef(null);
+  const[loading,setLoading]=useState(false)
 
   const sendEmail = (e: any) => {
     e.preventDefault();
-
+    setLoading(true)
     emailjs
       .sendForm(
         'service_bu4h10e',
@@ -17,12 +19,13 @@ const Contact = () => {
       )
       .then(
         () => {
-          console.log('SUCCESS!');
-          alert('Email sent successfully!');
+         
+          toast.success('Email sent successfully!');
+          setLoading(false)
         },
         (error) => {
           console.log('FAILED...', error.text);
-          alert('Email sending failed. Please try again later.');
+          toast.error('Message failed to send. Please try again later.'); 
         },
       );
   };
@@ -94,8 +97,9 @@ const Contact = () => {
               </div>
               <div>
                 <input
+                
                   type="submit"
-                  value="Send"
+                  value={loading ? ('Sending...'):('Send')}
                   className="bg-orange-600 hover:bg-orange-700 text-white py-2 px-5 rounded-lg cursor-pointer transition-all duration-300 transform hover:scale-105"
                 />
               </div>
@@ -103,6 +107,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <ToastContainer/>
     </>
   );
 };

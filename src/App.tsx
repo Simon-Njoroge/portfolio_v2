@@ -9,6 +9,7 @@ import Certificatecontainer from './container/Certificatescontainer';
 import Blogscontainer from './container/blogs_container';
 import Contactcontainer from './container/contact_container';
 import Communitycontainer from './container/community_container';
+import Hireme from './components/hire';
 function App() {
  const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ function App() {
   {
     path:'Contact',
     element:<Container><Contactcontainer/></Container>
+  },
+  {
+    path:'Hireme',
+    element:<Hireme/>
   }
 
  ])

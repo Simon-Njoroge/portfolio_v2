@@ -1,14 +1,14 @@
 import { ArrowDownToLine } from 'lucide-react';
-import './nav.scss'
 import resume from '../assets/resume 1.pdf'
+import { Link } from 'react-router-dom';
 const Navbar = () => {
   
 
-    const day: any = document.querySelector('#bday')
-    day?.addEventListener('click', () => {
-      document.body.classList.toggle("mode")
+    // const day: any = document.querySelector('#bday')
+    // day?.addEventListener('click', () => {
+    //   document.body.classList.toggle("mode")
 
-    })
+    // })
    
   
   return (
@@ -22,9 +22,9 @@ const Navbar = () => {
             <ArrowDownToLine />
             Resume
           </button></a>
-          <button className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105"  id="bday">
+          <Link to='/Hireme'><button className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105"  id="bday">
             Hire Me
-          </button>
+          </button></Link>
         </div>
       </div>
     </>

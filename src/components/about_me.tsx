@@ -1,4 +1,4 @@
-import { Check, School } from 'lucide-react';
+import { Check} from 'lucide-react';
 const Aboutme = () => {
     const Experience = [
         {

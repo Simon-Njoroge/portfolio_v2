@@ -1,0 +1,33 @@
+[[redirects]]
+  from = "/Aboutme"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/Skills"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/Projects"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/Cerificates"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/Blogs"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/Contact"
+  to = "/index.html"
+  status = 200
+[[redirects]]
+  from = "/Hireme"
+  to = "/index.html"
+  status = 200

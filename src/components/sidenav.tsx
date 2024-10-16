@@ -27,9 +27,9 @@ const Sidenavbar = () => {
             <Link to="/Blogs"><li className="p-3 border-b-2 border-gray-700 hover:bg-gray-800 transition duration-300 cursor-pointer">
               Blogs
             </li></Link>
-            <Link to="/community"><li className="p-3 border-b-2 border-gray-700 hover:bg-gray-800 transition duration-300 cursor-pointer">
+            {/* <Link to="/community"><li className="p-3 border-b-2 border-gray-700 hover:bg-gray-800 transition duration-300 cursor-pointer">
               community
-            </li></Link>
+            </li></Link> */}
             <Link to="/Contact"> <li className="p-3 border-b-2 border-gray-700 hover:bg-gray-800 transition duration-300 cursor-pointer">
               Contacts
             </li></Link>

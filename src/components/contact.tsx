@@ -24,8 +24,10 @@ const Contact = () => {
           setLoading(false)
         },
         (error) => {
+         
           console.log('FAILED...', error.text);
           toast.error('Message failed to send. Please try again later.'); 
+          setLoading(false)
         },
       );
   };

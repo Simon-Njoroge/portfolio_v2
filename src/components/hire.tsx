@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import ClipLoader from "react-spinners/ClipLoader";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'; 
-
+import { Link } from 'react-router-dom';
 const Hireme = () => {
   const form: any = useRef(null);
   const [loading, setLoad] = useState(false);
@@ -35,6 +35,11 @@ const Hireme = () => {
   return (
     <>
       <div className="max-w-lg mx-auto p-6 bg-white rounded-lg shadow-lg mt-10">
+      <Link to="/"><button
+              className="w-full px-4 py-2 bg-orange-600 text-white rounded-lg font-semibold hover:bg-orange-700 transition duration-300"
+            >
+              Back
+            </button></Link>
         <h2 className="text-2xl font-bold text-center mb-6 text-gray-800">Hire Me</h2>
         <form ref={form} onSubmit={sendEmail} className="space-y-4">
           <div>

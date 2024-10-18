@@ -20,6 +20,7 @@ const Hireme = () => {
       .then(
         () => {
           toast.success('Message sent successfully!'); 
+          setLoad(false); 
           setTimeout(() => {
             navigate('/');
           }, 3000);
@@ -34,7 +35,7 @@ const Hireme = () => {
 
   return (
     <>
-      <div className="max-w-lg mx-auto p-6 bg-white rounded-lg shadow-lg mt-10">
+      <div className="max-w-lg mx-auto p-6 bg-gray-900 rounded-lg shadow-lg mt-10">
       <Link to="/"><button
               className="w-full px-4 py-2 bg-orange-600 text-white rounded-lg font-semibold hover:bg-orange-700 transition duration-300"
             >
@@ -43,31 +44,31 @@ const Hireme = () => {
         <h2 className="text-2xl font-bold text-center mb-6 text-gray-800">Hire Me</h2>
         <form ref={form} onSubmit={sendEmail} className="space-y-4">
           <div>
-            <label className="block text-gray-700 font-medium">Name</label>
+            <label className="block text-white  font-medium">Name</label>
             <input
               type="text"
               name="user_name"
               required
-              className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-orange-600 focus:outline-none"
+              className="w-full px-4 py-2 border text-white bg-gray-900 rounded-lg focus:ring-2 focus:ring-orange-600 focus:outline-none"
               placeholder="Enter your name"
             />
           </div>
           <div>
-            <label className="block text-gray-700 font-medium">Email</label>
+            <label className="block text-white font-medium">Email</label>
             <input
               type="email"
               name="user_email"
               required
-              className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-orange-600 focus:outline-none"
+              className="w-full px-4 py-2 border text-white bg-gray-900 rounded-lg focus:ring-2 focus:ring-orange-600 focus:outline-none"
               placeholder="Enter your email"
             />
           </div>
           <div>
-            <label className="block text-gray-700 font-medium">Message</label>
+            <label className="block text-white font-medium">Message</label>
             <textarea
               name="message"
               required
-              className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-orange-600 focus:outline-none"
+              className="w-full px-4 py-2 border text-white bg-gray-900 rounded-lg focus:ring-2 focus:ring-orange-600 focus:outline-none"
               rows={row}
               placeholder="Write your message"
             ></textarea>

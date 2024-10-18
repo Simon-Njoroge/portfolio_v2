@@ -58,7 +58,7 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Contact Form */}
+          
           <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
             <form ref={form} onSubmit={sendEmail} className="space-y-4">
               <div>

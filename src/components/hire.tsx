@@ -41,7 +41,7 @@ const Hireme = () => {
             >
               Back
             </button></Link>
-        <h2 className="text-2xl font-bold text-center mb-6 text-gray-800">Hire Me</h2>
+        <h2 className="text-2xl font-bold text-center mb-6 text-white">Hire Me</h2>
         <form ref={form} onSubmit={sendEmail} className="space-y-4">
           <div>
             <label className="block text-white  font-medium">Name</label>

@@ -9,7 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Project = () => {
     const handleClick = () => {
-        toast.success("Running pnpm run dev");
+        toast.loading("Running pnpm run dev");
     };
 
     const project = [

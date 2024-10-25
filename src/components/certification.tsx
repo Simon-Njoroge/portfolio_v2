@@ -1,4 +1,10 @@
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Certificate = () => {
+    const handleClick=()=>{
+        toast.loading("loading please wait....")
+    }
     const certificate = [
         {
             id: 1,
@@ -32,7 +38,7 @@ const Certificate = () => {
                                         <div key={cert.id} className=" mb-5 bg-gray-800 hover:bg-gray-700 transition duration-300 p-2 rounded-md">
                                             <img src={cert.logo} alt="" className="w-full h-40 rounded" />
                                             <p className="text-center text-white font-bold">{cert.for}</p>
-                                            <p className="text-center"><a href={cert.link} className="text-center inline-block px-4 py-2 border border-gray-900 rounded-md text-gray-900 hover:bg-red-900 hover:text-white transition-colors duration-300">
+                                            <p className="text-center"><a href={cert.link} className="text-center inline-block px-4 py-2 border border-gray-900 rounded-md text-gray-900 hover:bg-red-900 hover:text-white transition-colors duration-300" onClick={handleClick}>
                                                 Verify
                                             </a></p>
                                         </div>
@@ -45,6 +51,7 @@ const Certificate = () => {
                     }
                 </div>
             </div>
+            <ToastContainer/>
             <br />
             <br />
         </>

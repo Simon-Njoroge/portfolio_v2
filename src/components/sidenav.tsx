@@ -22,7 +22,7 @@ const Sidenavbar = () => {
               Projects
             </li></Link>
             <Link to="/Cerificates"><li className="p-3 border-b-2 border-gray-700 hover:bg-gray-800 transition duration-300 cursor-pointer">
-              Certifites
+              Certicate
             </li></Link>
             <Link to="/Blogs"><li className="p-3 border-b-2 border-gray-700 hover:bg-gray-800 transition duration-300 cursor-pointer">
               Blogs

@@ -45,6 +45,8 @@ const Certificate = () => {
                     }
                 </div>
             </div>
+            <br />
+            <br />
         </>
     )
 }

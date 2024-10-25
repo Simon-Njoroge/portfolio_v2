@@ -5,6 +5,7 @@ import ClipLoader from "react-spinners/ClipLoader";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'; 
 import { Link } from 'react-router-dom';
+import { SendHorizontal } from 'lucide-react';
 const Hireme = () => {
   const form: any = useRef(null);
   const [loading, setLoad] = useState(false);
@@ -84,7 +85,10 @@ const Hireme = () => {
                   <ClipLoader size={20} color="#fff" />
                 </span>
               ) : (
-                'Send Message'
+                <p className="flex text-center justify-center space-x-2">
+                <span><SendHorizontal /></span>
+                <span>Send</span>
+              </p>
               )}
             </button>
           </div>

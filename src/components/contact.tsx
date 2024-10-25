@@ -3,6 +3,7 @@ import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'; 
+
 const Contact = () => {
   const form: any = useRef(null);
   const[loading,setLoading]=useState(false)
@@ -38,12 +39,12 @@ const Contact = () => {
         <div>
           <h1 className="text-orange-600  font-bold text-4xl mb-5">Contact Me</h1>
         </div>
-        <div className="grid lg:grid-cols-2 gap-10">
+        <div className="grid lg:grid-cols-2 gap-10 bg-gray-800 p-2 rounded-lg">
           {/* Contact Information */}
           <div>
             <h2 className="text-orange-600 font-bold text-3xl mb-5">Get In Touch</h2>
             <div className="space-y-5">
-              <div className="flex items-center gap-3 text-lg">
+              <div className="flex items-center gap-3 text-sm md:text-lg">
                 <Mail className="text-orange-600" />
                 <span>mukirisimon22@gmail.com</span>
               </div>
@@ -101,7 +102,7 @@ const Contact = () => {
                 <input
                 
                   type="submit"
-                  value={loading ? ('Sending...'):('Send')}
+                  value={loading ? ('Sending...'):(`Send`)}
                   className="bg-orange-600 hover:bg-orange-700 text-white py-2 px-5 rounded-lg cursor-pointer transition-all duration-300 transform hover:scale-105"
                 />
               </div>
@@ -110,6 +111,9 @@ const Contact = () => {
         </div>
       </div>
       <ToastContainer/>
+      <br/>
+     <br/>
+     <br/>
     </>
   );
 };

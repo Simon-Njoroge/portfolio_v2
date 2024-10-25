@@ -1,9 +1,9 @@
 
 const Blog = () => {
   return (
-    <div className="bg-gray-900 p-6">
+    <div className="bg-gray-900 p-1 md:p-6">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold text-center mb-8 text-blue-600">My Blog Posts</h1>
+        <h1 className="text-4xl font-bold text-center mb-8 text-orange-600">My Blog Posts</h1>
 
         {/* Blog 1 */}
         <div className="bg-gray-800 rounded-lg shadow-lg mb-8 p-6">
@@ -44,6 +44,8 @@ const Blog = () => {
           </p>
         </div>
       </div>
+      <br />
+     
     </div>
   );
 };

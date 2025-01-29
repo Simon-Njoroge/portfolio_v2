@@ -1,5 +1,5 @@
 import { ArrowDownToLine } from 'lucide-react';
-import resume from '../assets/resume 1.pdf'
+import resume from '../assets/my resume 2025.pdf'
 import { Link } from 'react-router-dom';
 const Navbar = () => {
   
